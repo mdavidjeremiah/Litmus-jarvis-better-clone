@@ -1,0 +1,37 @@
+voice:
+  enabled: true
+  wake_word: "jarvis"
+  language: "en-US"
+  voice_id: null
+  speech_rate: 150
+  energy_threshold: 300
+  pause_threshold: 0.8
+  phrase_threshold: 0.3
+llm:
+  model: "llama2"
+  host: "http://localhost:11434"
+  temperature: 0.7
+  max_tokens: 2000
+  context_window: 4096
+  system_prompt: |
+    You are JARVIS, an AI assistant inspired by Iron Man's AI.
+    You are helpful, intelligent, and slightly witty. You can help with coding,
+    system tasks, and answering questions. You work offline using local models.
+web:
+  cache_path: "data/web_cache.db"
+  cache_ttl_days: 30
+  max_cache_size_mb: 500
+  auto_fetch: true
+automation:
+  allowed_apps:
+    - chrome
+    - firefox
+    - code
+    - terminal
+    - calculator
+    - notepad
+    - files
+  code_sandbox_path: "data/sandbox"
+  confirm_destructive: true
+data_dir: "data"
+log_level: "INFO"

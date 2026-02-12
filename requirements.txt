@@ -1,0 +1,30 @@
+# Voice
+SpeechRecognition==3.10.1
+pyttsx3==2.90
+PyAudio==0.2.14
+pvporcupine==3.0.2
+
+# LLM
+ollama==0.1.7
+
+# Web Scraping & Cache
+requests==2.31.0
+beautifulsoup4==4.12.3
+lxml==4.9.4
+newspaper3k==0.2.8
+
+# Configuration
+PyYAML==6.0.1
+
+# Database
+sqlite3-python==0.0.1
+
+# Utilities
+rich==13.7.0
+click==8.1.7
+colorama==0.4.6
+python-dotenv==1.0.0
+
+# Async
+asyncio==3.4.3
+aiohttp==3.9.1
