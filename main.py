@@ -12,8 +12,8 @@ from pathlib import Path
 project_root = Path(__file__).parent
 sys.path.insert(0, str(project_root))
 
-from jarvis.core import JarvisCore
-from jarvis.config.settings import Settings
+from core import JarvisCore
+from config.settings import Settings
 
 def main():
     parser = argparse.ArgumentParser(description="JARVIS AI Assistant")

@@ -7,22 +7,23 @@ import time
 from typing import Optional, Callable
 from dataclasses import dataclass
 from enum import Enum, auto
-from jarvis.config.settings import Settings
-from jarvis.voice.stt import SpeechRecognizer
-from jarvis.voice.tts import TextToSpeech
-from jarvis.voice.wake_word import WakeWordDetector
-from jarvis.llm.ollama_client import OllamaClient
-from jarvis.automation.apps import AppManager
-from jarvis.automation.coding import CodeManager
-from jarvis.automation.system import SystemManager
-from jarvis.web.cache import WebCache
-from jarvis.skills.registry import SkillRegistry
+from voice.stt import SpeechRecognizer
+from voice.tts import TextToSpeech
+from voice.wake_word import WakeWordDetector
+from llm.ollama_client import OllamaClient
+from automation.apps import AppManager
+from automation.coding import CodeManager
+from automation.system import SystemManager
+from web.cache import WebCache
+from skills.registry import SkillRegistry
 class State(Enum):
     IDLE = auto()
-    LISTENING = auto()
-    PROCESSING = auto()
-    RESPONDING = auto()
-    ERROR = auto()
+from config.settings import Settings
+
+LISTENING = auto()
+PROCESSING = auto()
+RESPONDING = auto()
+ERROR = auto()
 @dataclass
 class Context:
     """Conversation context"""
