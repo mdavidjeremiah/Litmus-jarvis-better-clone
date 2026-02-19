@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-"""
-JARVIS AI Assistant - Main Entry Point
-"""
 import argparse
 import sys
 import asyncio

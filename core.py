@@ -82,11 +82,11 @@ class JarvisCore:
         self.web_cache = WebCache(self.settings.web.cache_path)
         
         # Skills
-        print("🔧 Loading skills...")
+        print(" Loading skills...")
         self.skills = SkillRegistry()
         self.skills.load_builtin_skills()
         
-        print("✅ JARVIS ready!")
+        print(" JARVIS ready!")
     
     def set_state(self, new_state: State):
         """Change state and notify listeners"""
